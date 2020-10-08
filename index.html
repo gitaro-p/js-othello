@@ -1,45 +1,19 @@
-<!DOCTYPE　html>
+<!DOCTYPE html>
+<html lang="ja">
   <head>
-    <script src="othello.js"></script>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <title>Othello</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="style.css" type="text/css" />
+    <title>TypeScriptリバーシ</title>
   </head>
-  <body onload="init()">
-    <div id="othello">
-      <div id="board" style="position:relative;width:257px;height:257px"></div>
-      <div id="message"></div>
-
-      <div style="display:none">
-        <div
-          id="empty"
-          class="empty"
-          style="position:absolute;width:33px;height:33px;background-color:#000"
-        >
-          <div
-            style="position:relative;top:1px;left:1px;width:31px;height:31px;background-color:#00ee00"
-          ></div>
-        </div>
-        <div
-          id="white"
-          class="white"
-          style="position:absolute;width:33px;height:33px;background-color:#000"
-        >
-          <img
-            style="display:block;position:relative;top:1px;left:1px;width:31px;height:31px;background-color:#00ee00"
-            src="white.png"
-          />
-        </div>
-        <div
-          id="black"
-          class="black"
-          style="position:absolute;width:33px;height:33px;background-color:#000"
-        >
-          <img
-            style="display:block;position:relative;top:1px;left:1px;width:31px;height:31px;background-color:#00ee00"
-            src="black.png"
-          />
-        </div>
-      </div>
+  <body>
+    <div class="centering">
+      <div id="gameBoard" class="gameBoard"></div>
     </div>
+    <div class="centering">
+      <div id="blackDisplay" class="gameDisplay">2</div>
+      <span class="vs"> VS </span>
+      <div id="whiteDisplay" class="gameDisplay">2</div>
+    </div>
+    <script type="text/javascript" src="main.js"></script>
   </body>
 </html>
